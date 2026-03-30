@@ -29,6 +29,8 @@ public class Birb : MonoBehaviour
         rb.bodyType = RigidbodyType2D.Dynamic;
         rb.AddForce(dir*_launchForce);
         sr.color = Color.white;
+        var audio = GetComponent<AudioSource>();
+        audio.Play();
     }
     void OnMouseDrag()
     {
