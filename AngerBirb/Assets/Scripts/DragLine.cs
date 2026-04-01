@@ -1,4 +1,6 @@
+using System;
 using UnityEngine;
+using UnityEngine.TextCore.Text;
 
 public class DragLine : MonoBehaviour
 {
@@ -20,7 +22,11 @@ public class DragLine : MonoBehaviour
         {
             _lineRenderer.enabled=true;
             _lineRenderer.SetPosition(1,_birb.transform.position);
-        }else{
+            float dist = Vector2.Distance(_lineRenderer.GetPosition(0), _lineRenderer.GetPosition(1));
+            _lineRenderer.endWidth = 1+dist;
+            _lineRenderer.startWidth = .25f + dist;
+        }
+        else{
             _lineRenderer.enabled=false;
         }
     }

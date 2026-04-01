@@ -180,6 +180,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e26991c4fbade084b9d7c2b254575bda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Crate
+  _clips:
+  - {fileID: 0}
 --- !u!82 &7395151044337282470
 AudioSource:
   m_ObjectHideFlags: 0
