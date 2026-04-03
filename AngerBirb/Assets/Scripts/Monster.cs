@@ -23,7 +23,9 @@ public class Monster : MonoBehaviour
             float delay = UnityEngine.Random.Range(5, 30);
             yield return Awaitable.WaitForSecondsAsync(delay);
             if (!_hasDied)
+            {
                 GetComponent<AudioSource>().Play();
+            }
         }
     }
     void OnCollisionEnter2D(Collision2D collision)
