@@ -223,7 +223,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      maxColor: {r: 0.6830188, g: 0.1675329, b: 0.1675329, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -4980,9 +4980,9 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: 6376e65d5cd1502458f627e6f98265e4, type: 3}
+  m_Sprite: {fileID: 2162766994774161030, guid: 5f2b4721d07bf164fa3786a1e80546a4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -5054,8 +5054,8 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 0.75, y: 0.9375}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -5063,23 +5063,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.17999999, y: -0.48999998}
-      - {x: 0.28, y: -0.32}
-      - {x: 0.29, y: -0.19999999}
-      - {x: 0.29, y: 0.12}
-      - {x: 0.25, y: 0.19999999}
-      - {x: 0.12, y: 0.32999998}
-      - {x: 0.14, y: 0.45999998}
-      - {x: 0.089999996, y: 0.5}
-      - {x: -0.049999997, y: 0.5}
-      - {x: -0.28, y: 0.19999999}
-      - {x: -0.29, y: 0.099999994}
-      - {x: -0.29, y: -0.22}
-      - {x: -0.26999998, y: -0.26999998}
-      - {x: -0.26, y: -0.31}
-      - {x: -0.22, y: -0.35}
-      - {x: -0.19999999, y: -0.5}
-      - {x: 0.16, y: -0.5}
+    - - {x: -0.375, y: 0.9375}
+      - {x: -0.375, y: 0}
+      - {x: 0.375, y: 0}
+      - {x: 0.375, y: 0.875}
+      - {x: 0.125, y: 0.9375}
   m_UseDelaunayMesh: 1
 --- !u!114 &4528932800272055586
 MonoBehaviour:
@@ -5093,7 +5081,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9ed40aa8084ae343b7af71a5c06fa4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Monster
-  _dead: {fileID: 21300000, guid: 70a60dad9c6f2aa42941b53edf1428e9, type: 3}
+  _dead: {fileID: 641021518690718148, guid: 5f2b4721d07bf164fa3786a1e80546a4, type: 3}
   _effect: {fileID: 7628831258571348170}
 --- !u!82 &2109602313069032057
 AudioSource:

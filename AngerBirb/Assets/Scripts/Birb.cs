@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Birb : MonoBehaviour
@@ -54,8 +55,10 @@ public class Birb : MonoBehaviour
     async void Dely()
     {
         await Awaitable.WaitForSecondsAsync(2.5f);
-        rb.position = _startPosition;
-        rb.bodyType=RigidbodyType2D.Kinematic;
-        rb.linearVelocity=Vector2.zero;
+        if(rb!=null){
+            rb.position = _startPosition;
+            rb.bodyType=RigidbodyType2D.Kinematic;
+            rb.linearVelocity=Vector2.zero;
+        }
     }
 }

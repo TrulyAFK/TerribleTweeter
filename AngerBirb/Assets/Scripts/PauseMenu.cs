@@ -11,7 +11,7 @@ public class PauseMenu : MonoBehaviour
     public GameObject Setting;
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.BackQuote))
         {
             if (GamePaused)
             {
@@ -46,6 +46,7 @@ public class PauseMenu : MonoBehaviour
     }
     public void QuitGame()
     {
+        SceneManager.LoadScene(0);
         Debug.Log("quit");
         Application.Quit();
     }

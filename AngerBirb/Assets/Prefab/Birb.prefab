@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 3306148719198516010}
   - component: {fileID: 6262896499526395250}
   - component: {fileID: 4353113978298909533}
-  - component: {fileID: 8330711136937820112}
   - component: {fileID: 2871701409930657347}
   m_Layer: 0
   m_Name: Birb
@@ -32,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.5, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.13946167, y: 0.13946167, z: 0.13946167}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -86,9 +85,9 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: 354e3b168c253dd4fb6a80ed1dad7358, type: 3}
+  m_Sprite: {fileID: 8008985951714305440, guid: 6dc1f42d7cb446e40b0e1b40cd15784f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -161,7 +160,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 4.82, y: 6.09}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -169,33 +168,22 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.5, y: -0.14}
-      - {x: 0.44, y: -0.06}
-      - {x: 0.25, y: 0.02}
-      - {x: 0.24, y: 0.24}
-      - {x: 0.13, y: 0.39}
-      - {x: -0.04, y: 0.39}
-      - {x: -0.04, y: 0.29999998}
-      - {x: -0.19, y: 0.17}
-      - {x: -0.26999998, y: 0.099999994}
-      - {x: -0.32, y: 0}
-      - {x: -0.31, y: -0.07}
-      - {x: -0.47, y: -0.11}
-      - {x: -0.5, y: -0.14}
-      - {x: -0.5, y: -0.22}
-      - {x: -0.48999998, y: -0.26}
-      - {x: -0.42, y: -0.32999998}
-      - {x: -0.32, y: -0.29999998}
-      - {x: -0.19999999, y: -0.39}
-      - {x: -0.17999999, y: -0.39}
-      - {x: -0.14999999, y: -0.32999998}
-      - {x: -0.04, y: -0.37}
-      - {x: 0.08, y: -0.39}
-      - {x: 0.16, y: -0.39}
-      - {x: 0.21, y: -0.38}
-      - {x: 0.26, y: -0.31}
-      - {x: 0.26, y: -0.24}
-      - {x: 0.5, y: -0.17999999}
+    - - {x: 1.7729388, y: -2.725}
+      - {x: 1.4613283, y: -2.6694376}
+      - {x: 1.4807978, y: -1.4312973}
+      - {x: 2.4099998, y: -1.4649999}
+      - {x: 2.4099998, y: 0.49499997}
+      - {x: 2.0893476, y: 0.37012446}
+      - {x: 2.1103241, y: 2.8632817}
+      - {x: -0.40881562, y: 2.999568}
+      - {x: -0.5776758, y: 0.62295914}
+      - {x: -2.275409, y: 0.41034096}
+      - {x: -2.3764975, y: -1.368582}
+      - {x: -1.2468177, y: -1.3580066}
+      - {x: -1.421821, y: -3.0144758}
+      - {x: -0.38337052, y: -3.0356581}
+      - {x: -0.19, y: -3.0449998}
+      - {x: 1.7850767, y: -3.0582952}
   m_UseDelaunayMesh: 1
 --- !u!114 &4353113978298909533
 MonoBehaviour:
@@ -211,28 +199,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Birb
   _launchForce: 750
   _maxDrag: 3
---- !u!95 &8330711136937820112
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7673682344204183128}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6fb51522e058a2f4dabafe745c22bf60, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!82 &2871701409930657347
 AudioSource:
   m_ObjectHideFlags: 0
@@ -244,7 +210,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -5949929974052062770, guid: f4923b6b5b2f87145ad82e89e1d0c615, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: f9312de6b8aa29741b815b8721409faa, type: 3}
+  m_Resource: {fileID: 8300000, guid: 43d7729a592a568448dafba29ae0a6c5, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
